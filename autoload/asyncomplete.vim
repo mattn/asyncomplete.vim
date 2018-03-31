@@ -14,7 +14,7 @@ let s:last_tick = []
 let s:startcol = -1
 let s:candidates = []
 let s:script_path = expand('<sfile>:p:h')
-let s:has_lua = has('lua') || has('neovim-0.2.2')
+let s:has_lua = has('lua') || has('nvim-0.2.2')
 let s:supports_smart_completion = s:has_lua && exists('##TextChangedP')
 
 function! asyncomplete#log(...) abort

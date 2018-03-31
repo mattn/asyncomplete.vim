@@ -3,7 +3,7 @@ if exists('g:asyncomplete_loaded')
 endif
 let g:asyncomplete_loaded = 1
 
-let s:has_lua = has('lua') || has('neovim-0.2.2')
+let s:has_lua = has('lua') || has('nvim-0.2.2')
 
 if get(g:, 'asyncomplete_enable_for_all', 1)
     augroup asyncomplete_enable
